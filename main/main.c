@@ -4,7 +4,10 @@
 #include "wifi_soft_AP.h"
 #include "web_server.h"
 #include "led.h"
+#include "wifi_STA.h"
 
+#define HOME_SSID "TP-Link_A153"
+#define HOME_PASS "97219453"
 
 void app_main(void)
 {
@@ -23,7 +26,9 @@ void app_main(void)
     led_init();
 
     // Wi-Fi SoftAP start
-    wifi_soft_AP_start();
+    // wifi_soft_AP_start();
+    
+    wifi_sta_start(HOME_SSID, HOME_PASS);
     
     // Web server
     web_server_start();
