@@ -1,7 +1,7 @@
 #include "led.h"
 #include "driver/gpio.h"
 
-#define LED_GPIO GPIO_NUM_18
+#define LED_GPIO GPIO_NUM_16
 
 static bool s_led_on = false;
 

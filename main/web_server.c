@@ -81,5 +81,5 @@ void web_server_start(void)
     httpd_register_uri_handler(server, &uri_led_off);
     httpd_register_uri_handler(server, &uri_led_state);
 
-    ESP_LOGI(TAG, "Web server started. Open http://192.168.4.1/");
+    //ESP_LOGI(TAG, "Web server started.");
 }
